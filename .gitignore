@@ -49,3 +49,6 @@ generated/
 .env
 .env.*
 secrets.properties
+
+# Specific files
+references/
