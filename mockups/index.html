@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SpeakOut v2 - Mockup Index</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/style.css" rel="stylesheet">
+</head>
+<body>
+  <div class="so-mockup-banner">
+    Static HTML mockups for SpeakOut v2 - not the final JSP implementation.
+  </div>
+
+  <div class="container py-5">
+    <div class="d-flex align-items-center gap-3 mb-2">
+      <div class="so-brand-logo">SO</div>
+      <h1 class="mb-0 so-brand">SpeakOut v2 - Mockups</h1>
+    </div>
+    <p class="text-muted mb-4">Click any screen to preview. These will guide the JSP implementation.</p>
+
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-4">
+        <div class="so-card h-100">
+          <h6 class="so-section-title"><i class="bi bi-shield-lock me-2 text-primary"></i>Authentication</h6>
+          <ul class="list-unstyled mb-0">
+            <li class="mb-2"><a href="login.html">1. Login</a> <span class="text-muted small">- session-based</span></li>
+            <li class="mb-2"><a href="register.html">2. Registration</a> <span class="text-muted small">- with validation</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="so-card h-100">
+          <h6 class="so-section-title"><i class="bi bi-person me-2 text-primary"></i>Student</h6>
+          <ul class="list-unstyled mb-0">
+            <li class="mb-2"><a href="student-dashboard.html">3. Student Dashboard</a></li>
+            <li class="mb-2"><a href="report-list.html">4. My Reports (list)</a></li>
+            <li class="mb-2"><a href="report-form.html">5. Submit / Edit Report</a></li>
+            <li class="mb-2"><a href="report-detail.html">6. Report Detail (student view)</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="so-card h-100">
+          <h6 class="so-section-title"><i class="bi bi-mortarboard me-2 text-primary"></i>Teacher / Counselor</h6>
+          <ul class="list-unstyled mb-0">
+            <li class="mb-2"><a href="teacher-dashboard.html">7. Teacher Dashboard</a></li>
+            <li class="mb-2"><a href="case-detail.html">8. Case Detail (with notes CRUD)</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="so-card h-100">
+          <h6 class="so-section-title"><i class="bi bi-bar-chart-line me-2 text-primary"></i>Admin</h6>
+          <ul class="list-unstyled mb-0">
+            <li class="mb-2"><a href="admin-dashboard.html">9. Admin Dashboard</a> <span class="text-muted small">- charts</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="so-card h-100">
+          <h6 class="so-section-title"><i class="bi bi-gear me-2 text-primary"></i>Account</h6>
+          <ul class="list-unstyled mb-0">
+            <li class="mb-2"><a href="profile.html">10. Profile / Change Password</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="so-card mt-4">
+      <h6 class="so-section-title"><i class="bi bi-info-circle me-2 text-primary"></i>Module mapping (rubric alignment)</h6>
+      <div class="table-responsive">
+        <table class="table so-table mb-0">
+          <thead>
+            <tr><th>Required module</th><th>Mockup(s)</th><th>Servlet(s)</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Login / Logout (session)</td>
+              <td><a href="login.html">login.html</a></td>
+              <td><code>LoginServlet</code>, <code>LogoutServlet</code></td>
+            </tr>
+            <tr>
+              <td>Registration with validation</td>
+              <td><a href="register.html">register.html</a></td>
+              <td><code>RegisterServlet</code></td>
+            </tr>
+            <tr>
+              <td>CRUD - Information management</td>
+              <td><a href="report-list.html">report-list</a>, <a href="report-form.html">report-form</a>, <a href="report-detail.html">report-detail</a>, <a href="case-detail.html">case-detail</a></td>
+              <td><code>ReportServlet</code>, <code>CaseNoteServlet</code></td>
+            </tr>
+            <tr>
+              <td>Dashboard</td>
+              <td><a href="student-dashboard.html">student</a>, <a href="teacher-dashboard.html">teacher</a>, <a href="admin-dashboard.html">admin</a></td>
+              <td><code>DashboardServlet</code></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <p class="text-muted small mt-4 mb-0">
+      Color palette: indigo primary (<code>#5B4FE0</code>) + teal accent (<code>#14B8A6</code>). Bootstrap 5.3, Bootstrap Icons, Chart.js (admin dashboard only).
+    </p>
+  </div>
+</body>
+</html>

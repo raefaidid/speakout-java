@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Case #SO-0421 (Teacher) - SpeakOut v2</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/style.css" rel="stylesheet">
+</head>
+<body>
+  <div class="so-mockup-banner">Mockup (teacher view, case notes CRUD) - <a href="index.html" class="text-decoration-none">back to index</a></div>
+
+  <nav class="navbar navbar-expand-lg navbar-so">
+    <div class="container">
+      <a class="navbar-brand so-brand" href="teacher-dashboard.html">
+        <div class="so-brand-logo">SO</div>
+        SpeakOut
+      </a>
+      <div class="d-flex align-items-center gap-2 order-lg-3">
+        <button class="btn btn-light btn-sm position-relative">
+          <i class="bi bi-bell"></i>
+          <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" style="font-size: 0.65rem;">3</span>
+        </button>
+        <div class="dropdown">
+          <button class="btn btn-light btn-sm rounded-circle" data-bs-toggle="dropdown">
+            <i class="bi bi-person"></i>
+          </button>
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li class="px-3 py-2"><div class="fw-semibold small">Cikgu Siti Aminah</div><div class="text-muted small">Counsellor - SMK Seksyen 9</div></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="profile.html"><i class="bi bi-gear me-2"></i>Profile</a></li>
+            <li><a class="dropdown-item text-danger" href="login.html"><i class="bi bi-box-arrow-right me-2"></i>Logout</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto me-lg-3">
+          <li class="nav-item"><a class="nav-link active" href="teacher-dashboard.html">Cases</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">My Students</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Resources</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container py-4">
+    <nav aria-label="breadcrumb" class="mb-2">
+      <ol class="breadcrumb small">
+        <li class="breadcrumb-item"><a href="teacher-dashboard.html" class="text-decoration-none">Cases</a></li>
+        <li class="breadcrumb-item active">#SO-0421</li>
+      </ol>
+    </nav>
+
+    <div class="d-flex justify-content-between align-items-start mb-4 flex-wrap gap-2">
+      <div>
+        <div class="text-muted small mb-1">Case ID #SO-0421</div>
+        <h1 class="fw-bold mb-2" style="font-size: 1.4rem;">Repeated name-calling in chemistry class</h1>
+        <div class="d-flex gap-2 flex-wrap align-items-center">
+          <span class="so-pill review"><i class="bi bi-clock"></i> In review</span>
+          <span class="so-pill cat-verbal">Verbal</span>
+          <span class="text-muted small ms-2"><i class="bi bi-calendar3 me-1"></i>Submitted 2025-05-15 09:42</span>
+          <span class="text-muted small"><i class="bi bi-geo-alt me-1"></i>Classroom</span>
+        </div>
+      </div>
+      <div class="d-flex gap-2">
+        <div class="dropdown">
+          <button class="btn btn-outline-primary dropdown-toggle" data-bs-toggle="dropdown">
+            Change status
+          </button>
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li><a class="dropdown-item" href="#">Mark as In review</a></li>
+            <li><a class="dropdown-item text-success" href="#"><i class="bi bi-check-circle me-2"></i>Mark as Resolved</a></li>
+            <li><a class="dropdown-item text-danger" href="#"><i class="bi bi-x-circle me-2"></i>Mark as Dismissed</a></li>
+          </ul>
+        </div>
+        <button class="btn btn-primary"><i class="bi bi-chat-text me-1"></i> Reply to reporter</button>
+      </div>
+    </div>
+
+    <div class="row g-4">
+      <div class="col-lg-8">
+        <div class="so-card mb-4">
+          <div class="d-flex justify-content-between align-items-start">
+            <div>
+              <h6 class="so-section-title mb-1"><i class="bi bi-file-text text-primary me-1"></i>Reporter's description</h6>
+              <div class="small text-muted mb-3">From <strong>Aiman Hakim Bin Rosli</strong> (Form 4 Bestari) - hidden from peers</div>
+            </div>
+          </div>
+          <p class="mb-0" style="white-space: pre-line;">For the past two weeks, a group of three students in my chemistry class have been calling me names and laughing at me whenever I answer questions. Today they pretended to "sneeze" out my nickname loudly while Cikgu Hasan had his back turned. I tried to ignore it but it's getting harder to focus.</p>
+        </div>
+
+        <div class="so-card mb-4">
+          <div class="d-flex justify-content-between align-items-center mb-3">
+            <h6 class="so-section-title mb-0"><i class="bi bi-journal-text text-primary me-1"></i>Investigation notes</h6>
+            <span class="text-muted small">2 notes - only visible to staff</span>
+          </div>
+
+          <div class="border rounded p-3 mb-3">
+            <div class="d-flex justify-content-between align-items-start mb-2">
+              <div>
+                <div class="fw-semibold">Cikgu Siti Aminah</div>
+                <div class="small text-muted">2025-05-15 10:18 - assigned to case</div>
+              </div>
+              <div class="dropdown">
+                <button class="btn btn-sm btn-light" data-bs-toggle="dropdown"><i class="bi bi-three-dots"></i></button>
+                <ul class="dropdown-menu dropdown-menu-end">
+                  <li><a class="dropdown-item" href="#"><i class="bi bi-pencil me-2"></i>Edit</a></li>
+                  <li><a class="dropdown-item text-danger" href="#"><i class="bi bi-trash me-2"></i>Delete</a></li>
+                </ul>
+              </div>
+            </div>
+            <p class="mb-0">Spoke briefly with Cikgu Hasan (chem teacher). He confirmed seeing the group whispering during today's class but didn't hear the names. Will arrange a private chat with Aiman tomorrow during recess.</p>
+          </div>
+
+          <div class="border rounded p-3 mb-3">
+            <div class="d-flex justify-content-between align-items-start mb-2">
+              <div>
+                <div class="fw-semibold">Cikgu Siti Aminah</div>
+                <div class="small text-muted">2025-05-15 11:55</div>
+              </div>
+              <div class="dropdown">
+                <button class="btn btn-sm btn-light" data-bs-toggle="dropdown"><i class="bi bi-three-dots"></i></button>
+                <ul class="dropdown-menu dropdown-menu-end">
+                  <li><a class="dropdown-item" href="#"><i class="bi bi-pencil me-2"></i>Edit</a></li>
+                  <li><a class="dropdown-item text-danger" href="#"><i class="bi bi-trash me-2"></i>Delete</a></li>
+                </ul>
+              </div>
+            </div>
+            <p class="mb-0">Pulled chemistry attendance list. Three students sit at Aiman's table: Wan, Faiz, and Aliff. Will speak with them separately on Monday. Marking case as <strong>In review</strong>.</p>
+          </div>
+
+          <form class="border-top pt-3 mt-3">
+            <label class="so-form-label">Add a note</label>
+            <textarea class="form-control" rows="3" placeholder="What did you observe / decide / plan next?"></textarea>
+            <div class="d-flex justify-content-end gap-2 mt-2">
+              <button type="button" class="btn btn-outline-secondary btn-sm">Cancel</button>
+              <button type="button" class="btn btn-primary btn-sm"><i class="bi bi-plus-lg me-1"></i>Add note</button>
+            </div>
+          </form>
+        </div>
+
+        <div class="so-card">
+          <h6 class="so-section-title"><i class="bi bi-clock-history text-primary me-1"></i>Case timeline</h6>
+          <div class="so-timeline">
+            <div class="so-timeline-item">
+              <div class="meta">2025-05-15 09:42</div>
+              <div class="fw-semibold">Report submitted</div>
+            </div>
+            <div class="so-timeline-item">
+              <div class="meta">2025-05-15 10:18</div>
+              <div class="fw-semibold">Assigned to Cikgu Siti Aminah</div>
+            </div>
+            <div class="so-timeline-item">
+              <div class="meta">2025-05-15 11:55</div>
+              <div class="fw-semibold">Status changed: Submitted &rarr; In review</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4">
+        <div class="so-card mb-3">
+          <h6 class="so-section-title"><i class="bi bi-info-circle text-primary me-1"></i>Case details</h6>
+          <dl class="row mb-0 small">
+            <dt class="col-5 text-muted fw-normal">Case ID</dt>
+            <dd class="col-7 fw-semibold">#SO-0421</dd>
+
+            <dt class="col-5 text-muted fw-normal">Status</dt>
+            <dd class="col-7"><span class="so-pill review">In review</span></dd>
+
+            <dt class="col-5 text-muted fw-normal">Category</dt>
+            <dd class="col-7"><span class="so-pill cat-verbal">Verbal</span></dd>
+
+            <dt class="col-5 text-muted fw-normal">Location</dt>
+            <dd class="col-7">Classroom</dd>
+
+            <dt class="col-5 text-muted fw-normal">Incident date</dt>
+            <dd class="col-7">2025-05-15</dd>
+
+            <dt class="col-5 text-muted fw-normal">Submitted</dt>
+            <dd class="col-7">2h ago</dd>
+          </dl>
+        </div>
+
+        <div class="so-card mb-3">
+          <h6 class="so-section-title"><i class="bi bi-person text-primary me-1"></i>Reporter</h6>
+          <div class="d-flex align-items-center gap-3 mb-3">
+            <div class="rounded-circle bg-primary-soft text-primary d-flex align-items-center justify-content-center" style="width:42px;height:42px;font-weight:700;">AH</div>
+            <div>
+              <div class="fw-semibold">Aiman Hakim Bin Rosli</div>
+              <div class="small text-muted">Form 4 Bestari</div>
+            </div>
+          </div>
+          <div class="small text-muted mb-2">aiman@smk9.edu.my</div>
+          <div class="so-anon-banner small">
+            <i class="bi bi-shield-lock me-1"></i> Identity hidden from peers - staff only.
+          </div>
+        </div>
+
+        <div class="so-card">
+          <h6 class="so-section-title"><i class="bi bi-people text-primary me-1"></i>Co-handlers</h6>
+          <div class="d-flex flex-wrap gap-2 mb-2">
+            <span class="badge bg-primary-soft text-primary">Cikgu Siti A. (lead)</span>
+          </div>
+          <button class="btn btn-sm btn-outline-primary w-100"><i class="bi bi-plus me-1"></i>Add co-handler</button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="container so-footer">
+    <hr class="my-3">
+    SpeakOut v2 - CSC472 Enterprise Programming - Group B
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

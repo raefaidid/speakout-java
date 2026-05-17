@@ -1,0 +1,51 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# IDE / editors
+.idea/
+.vscode/
+*.iml
+*.ipr
+*.iws
+nbproject/private/
+.nb-gradle/
+.settings/
+.project
+.classpath
+.factorypath
+
+# Java build artifacts
+*.class
+*.jar
+*.war
+*.ear
+*.nar
+hs_err_pid*
+replay_pid*
+
+# Build tool output
+target/
+build/
+out/
+bin/
+
+# Logs & temp
+*.log
+*.tmp
+*.swp
+*~
+
+# GlassFish / app server
+glassfish/
+domains/
+osgi-cache/
+generated/
+.cache/
+
+# Environment & secrets
+.env
+.env.*
+secrets.properties
